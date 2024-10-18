@@ -1,0 +1,88 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "BT1cYA44LqQs",
+        "outputId": "a8c476a2-d08b-4509-e7a6-28e9ea98dcd3",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Select operation:\n",
+            "1. Add\n",
+            "2. Subtract\n",
+            "3. Multiply\n",
+            "4. Divide\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "# Simple Calculator in Python\n",
+        "\n",
+        "# Function to add two numbers\n",
+        "def add(x, y):\n",
+        "    return x + y\n",
+        "\n",
+        "# Function to subtract two numbers\n",
+        "def subtract(x, y):\n",
+        "    return x - y\n",
+        "\n",
+        "# Function to multiply two numbers\n",
+        "def multiply(x, y):\n",
+        "    return x * y\n",
+        "\n",
+        "# Function to divide two numbers\n",
+        "def divide(x, y):\n",
+        "    if y == 0:\n",
+        "        return \"Cannot divide by zero!\"\n",
+        "    else:\n",
+        "        return x / y\n",
+        "\n",
+        "# Main program\n",
+        "print(\"Select operation:\")\n",
+        "print(\"1. Add\")\n",
+        "print(\"2. Subtract\")\n",
+        "print(\"3. Multiply\")\n",
+        "print(\"4. Divide\")\n",
+        "\n",
+        "choice = input(\"Enter choice (1/2/3/4): \")\n",
+        "\n",
+        "num1 = float(input(\"Enter first number: \"))\n",
+        "num2 = float(input(\"Enter second number: \"))\n",
+        "\n",
+        "if choice == '1':\n",
+        "    print(f\"{num1} + {num2} = {add(num1, num2)}\")\n",
+        "elif choice == '2':\n",
+        "    print(f\"{num1} - {num2} = {subtract(num1, num2)}\")\n",
+        "elif choice == '3':\n",
+        "    print(f\"{num1} * {num2} = {multiply(num1, num2)}\")\n",
+        "elif choice == '4':\n",
+        "    print(f\"{num1} / {num2} = {divide(num1, num2)}\")\n",
+        "else:\n",
+        "    print(\"Invalid input\")"
+      ]
+    }
+  ]
+}
